@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/styles/pokecard.css" media="screen" />
+    <title>Escolha seu Pokemon</title>
+</head>
+
+<body>
+    <div>
+        <h1 class="title">Gerador de PokeCard</h1>
+    </div>
+    <div class="container">
+        <div id="card">
+        </div>
+        <button id="new">Gerar Card Aleatório</button>
+        <div>
+            <input type="number" min="1" max="151" id="id" onKeyUp="if(this.value>251){this.value='251';}else if(this.value<1){this.value='1';}"></input>
+            <button id="force">Gerar Card</button>
+        </div>
+    </div>
+    <script src="/scripts/pokecard.js"></script>
+</body>
+
+</html>
