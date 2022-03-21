@@ -28,7 +28,7 @@ body {
     width: 100%;
     padding: 30px 20px;
     border-radius: 10px;
-    outline: 7px solid white;
+    outline: 8px solid #fcf5f2;
     outline-offset: -7px;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.09), 0 2px 2px rgba(0, 0, 0, 0.09), 0 4px 4px rgba(0, 0, 0, 0.09), 0 6px 8px rgba(0, 0, 0, 0.09), 0 8px 16px rgba(0, 0, 0, 0.09);
 }
@@ -128,7 +128,7 @@ body {
 
 #new:active,
 #force:active {
-    transform: scale(0.99);
+    transform: scale(0.99, 0.97);
 }
 
 .title {
@@ -142,7 +142,7 @@ body {
     color: #ffcd02;
     letter-spacing: 1.8px;
     -webkit-text-stroke: 1px #12297e;
-    text-shadow: -2px 3px 1px #12297e, -1px 3px 1px #12297e, 0px 3px 1px #12297e;
+    text-shadow: -2px 3px 1px #12297e, -1px 2px 1px #12297e, -1px 1px 1px #12297e, -1px 3px 1px #12297e, 0px 3px 1px #12297e;
 }
 
 input {

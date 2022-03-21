@@ -98,11 +98,11 @@ let genCard = (data) => {
 
 let appendTypes = (types) => {
     if (types.length === 2) {
-        card.style.background = `radial-gradient(circle at 50% 0%, transparent, transparent 36%, white 36.1%), linear-gradient(115deg, ${typeColor[types[0].type.name]}, ${typeColor[types[1].type.name]} 66%)`;
+        card.style.background = `radial-gradient(circle at 50% 0%, transparent, transparent 35.9%, #fcf5f2 36.2%), linear-gradient(115deg, ${typeColor[types[0].type.name]}, ${typeColor[types[1].type.name]} 66%)`;
         //card.style.background = `radial-gradient(circle at 50% 0%, transparent, transparent 36%, white 36.1%), linear-gradient(115deg, ${typeColor[types[0].type.name]}, ${typeColor[types[0].type.name]} 32%, ${typeColor[types[1].type.name]} 32.1%)`;
         //card.style.background = `radial-gradient(circle at 50% 0%, ${typeColor[types[1].type.name]}, ${typeColor[types[1].type.name]} 18%, ${typeColor[types[0].type.name]} 18.1%, ${typeColor[types[0].type.name]} 36%, white 36.1%)`;
     } else {
-        card.style.background = `radial-gradient(circle at 50% 0%,${typeColor[types[0].type.name]} 36%, white 36.1%)`;
+        card.style.background = `radial-gradient(circle at 50% 0%,${typeColor[types[0].type.name]} 35.9%, #fcf5f2 36.2%)`;
     }
     types.forEach((item) => {
         let span = document.createElement("SPAN")
