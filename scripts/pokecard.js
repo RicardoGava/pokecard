@@ -1,22 +1,22 @@
 const typeColor = {
-    bug: "#A8B820",
-    dragon: "#7038F8",
-    electric: "#F8D030",
-    fairy: "#FF0069",
-    fighting: "#C03028",
-    fire: "#F08030",
-    flying: "#A890F0",
-    grass: "#78C850",
-    ground: "#E0C068",
-    ghost: "#705898",
-    ice: "#98D8D8",
-    normal: "#A8A878",
-    poison: "#A040A0",
-    psychic: "#F85888",
-    rock: "#B8A038",
-    water: "#6890F0",
-    dark: "#705848",
-    steel: "#B8B8D0"
+    bug: "#91c02d",
+    dragon: "#096cc2",
+    electric: "#f4d23b",
+    fairy: "#ec8fe7",
+    fighting: "#cf3e6a",
+    fire: "#ff9d53",
+    flying: "#95abdd",
+    grass: "#63ba5d",
+    ground: "#d97647",
+    ghost: "#5368ac",
+    ice: "#72ccbf",
+    normal: "#9098a2",
+    poison: "#ac69c7",
+    psychic: "#f87076",
+    rock: "#c6b68d",
+    water: "#4d90d6",
+    dark: "#5b5364",
+    steel: "#5a8fa1"
 };
 
 const url = "https://pokeapi.co/api/v2/pokemon/";
@@ -98,9 +98,11 @@ let genCard = (data) => {
 
 let appendTypes = (types) => {
     if (types.length === 2) {
-        card.style.background = `radial-gradient(circle at 50% 0%, ${typeColor[types[1].type.name]}, ${typeColor[types[0].type.name]} 36%, #ffffff 36.1%)`;
+        card.style.background = `radial-gradient(circle at 50% 0%, transparent, transparent 36%, white 36.1%), linear-gradient(115deg, ${typeColor[types[0].type.name]}, ${typeColor[types[1].type.name]} 66%)`;
+        //card.style.background = `radial-gradient(circle at 50% 0%, transparent, transparent 36%, white 36.1%), linear-gradient(115deg, ${typeColor[types[0].type.name]}, ${typeColor[types[0].type.name]} 32%, ${typeColor[types[1].type.name]} 32.1%)`;
+        //card.style.background = `radial-gradient(circle at 50% 0%, ${typeColor[types[1].type.name]}, ${typeColor[types[1].type.name]} 18%, ${typeColor[types[0].type.name]} 18.1%, ${typeColor[types[0].type.name]} 36%, white 36.1%)`;
     } else {
-        card.style.background = `radial-gradient(circle at 50% 0%, ${typeColor[types[0].type.name]}, ${typeColor[types[0].type.name]} 36%, #ffffff 36.1%)`;
+        card.style.background = `radial-gradient(circle at 50% 0%,${typeColor[types[0].type.name]} 36%, white 36.1%)`;
     }
     types.forEach((item) => {
         let span = document.createElement("SPAN")

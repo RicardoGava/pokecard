@@ -5,8 +5,15 @@
     font-family: "Trebuchet MS", "Tahoma", sans-serif;
 }
 
+html {
+    height: 100%;
+}
+
 body {
-    background-color: #575f75;
+    margin: 0;
+    background-image: url("/forest.jpg");
+    background-size: auto 100%;
+    background-repeat: repeat-x;
 }
 
 .container {
@@ -86,7 +93,7 @@ body {
     margin: 0 -1px 0 -1px;
     color: white;
     transform: skew(-25deg);
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000, 0 -1px 0 #000, 0 1px 0 #000, 1px 0 0 #000, -1px 0 0 #000;
 }
 
 .status {
@@ -106,32 +113,42 @@ body {
 #new,
 #force {
     width: 300px;
+    height: 50px;
     display: block;
     padding: 12px 60px;
     font-size: 18px;
-    background-color: #101010;
-    color: #eff3ff;
+    font-weight: bolder;
+    color: #fcf5f2;
     position: relative;
     margin: 20px auto;
-    border: none;
     border-radius: 5px;
+    border: solid 1px #980c10;
+    background: linear-gradient(#dd1f22, #aa1317);
+}
+
+#new:active,
+#force:active {
+    transform: scale(0.99);
 }
 
 .title {
     margin: 10px 0 10px 0;
-    font-size: 42px;
+    font-size: 52px;
+    font-weight: bolder;
     position: relative;
     z-index: 2;
     align-items: center;
     text-align: center;
-    color: white;
-    text-shadow: -2px -2px 0 rgb(83, 83, 83, 0.5), 2px -2px 0 rgb(83, 83, 83, 0.5), -2px 2px 0 rgb(83, 83, 83, 0.5), 2px 2px 0 rgb(83, 83, 83, 0.5);
+    color: #ffcd02;
+    letter-spacing: 1.8px;
+    -webkit-text-stroke: 1px #12297e;
+    text-shadow: -2px 3px 1px #12297e, -1px 3px 1px #12297e, 0px 3px 1px #12297e;
 }
 
 input {
-    transform: translate(238px);
+    transform: translate(230px);
     text-align: center;
-    margin: 6px;
+    margin: 11px;
     padding: 0px;
     width: 50px;
     outline: none;
